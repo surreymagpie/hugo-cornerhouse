@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <article class="team team--single">
+    <h1 class="team__title" >{{ .Title }}</h1>
+    <div class="team__content" >{{ .Content }}</div>
+    <div class="team__quals" >
+      Qualifications: {{ delimit .Params.qualifications ", " }}
+    </div>
+    <div class="team__reg" >GDC Registration No.: {{ .Params.gdc_reg_no }}</div>
+    <div class="team__roles" >Role: {{ delimit .Params.roles ", " }}</div>
+  </article>
+{{ end }}

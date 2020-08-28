@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <div class="content">
+    {{ .Content }}
+  </div>
+
+  <div class="team--list">
+
+    {{range .Pages.ByWeight }}
+    <article class="team__member">
+      <h3><a href="{{ .Permalink | relURL }}">{{ .Title }}</a></h3>
+      <div>{{ .Summary }}</div>
+    </article>
+    {{ end }}
+
+  </div>
+{{ end }}

@@ -1,11 +1,18 @@
 {{ define "main" }}
   <article class="team team--single">
-    <h1 class="team__title" >{{ .Title }}</h1>
-    <div class="team__content" >{{ .Content }}</div>
-    <div class="team__quals" >
-      Qualifications: {{ delimit .Params.qualifications ", " }}
-    </div>
-    <div class="team__reg" >GDC Registration No.: {{ .Params.gdc_reg_no }}</div>
-    <div class="team__roles" >Role: {{ delimit .Params.roles ", " }}</div>
+    <section class="team__details">
+      <h1 class="team__title" >{{ .Title }}</h1>
+      <div class="team__content" >{{ .Content }}</div>
+    </section>
+    <dl class="team__metadata">
+      <dt>Qualifications:</dt>
+      <dd>{{ delimit .Params.qualifications ", " }}</dd>
+      <dt>GDC Registration No.:</dt>
+      <dd>{{ .Params.gdc_reg_no }}</dd>
+      <dt>Roles</dt>
+    {{ range (.GetTerms "roles") }}
+        <dd><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></dd>
+    {{ end }}
+    </dl>
   </article>
 {{ end }}

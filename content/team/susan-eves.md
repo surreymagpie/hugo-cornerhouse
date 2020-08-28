@@ -2,7 +2,7 @@
 title: "Susan Eves"
 gdc_reg_no: 147478
 qualifications:
-  - qual
+  - Verified competency in Dental Nursing
 roles:
   - Dental Nurse
   - Practice Manager

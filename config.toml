@@ -2,3 +2,8 @@ baseURL = "https://www.cornerhouse-dental.co.uk/"
 languageCode = "en-gb"
 title = "Cornerhouse Dental Practice"
 theme = "cornerhouse"
+
+[taxonomies]
+  category = "categories"
+  role = "roles"
+  tag = "tags"

@@ -1,0 +1,14 @@
+{{ define "main" }}
+  <div class="article--list">
+
+    {{range (.Paginator 3).Pages }}
+    <article class="article">
+      <h3><a href="{{ .Permalink | relURL }}">{{ .Title }}</a></h3>
+      <div>{{ .Summary }}</div>
+    </article>
+    {{ end }}
+
+  </div>
+
+  {{ template "_internal/pagination.html" . }}
+{{ end }}

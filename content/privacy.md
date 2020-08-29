@@ -3,7 +3,7 @@ title: "Privacy policy"
 date: 2018-08-22T22:21:28+01:00
 menu:
   footer:
-    name: Privacy
+    name: Privacy Policy
     weight: 1
 ---
 

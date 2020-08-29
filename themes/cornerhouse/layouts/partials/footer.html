@@ -1,1 +1,10 @@
-<footer class="site__footer">Footer area</footer>
+<footer class="site__footer">
+
+<ul class="footer-menu">
+    {{ range .Site.Menus.footer }}
+    <li class="footer-menu__item">
+        <a href="{{ .URL }}" class="footer-menu__link">{{ .Name }}</a>
+    </li>
+    {{ end }}
+</ul>
+</footer>

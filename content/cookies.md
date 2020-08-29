@@ -3,7 +3,7 @@ title: "Cookies"
 date: 2018-08-25T21:59:08+01:00
 menu:
   footer:
-    weight: 2
+    weight: 3
 ---
 
 Cookies are small text files stored on your computer by websites. This page will explain how this site uses cookies.

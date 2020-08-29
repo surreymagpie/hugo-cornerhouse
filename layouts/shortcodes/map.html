@@ -1,0 +1,19 @@
+<div class="map-wrapper" style="position: relative; width: 100%; padding-bottom: 50%;">
+  <div id="map" style="position: absolute; width: 100%; height: 100%;"></div>
+</div>
+
+<link rel="stylesheet" href="{{ "js/leaflet/leaflet.css" | relURL }}"/>
+<script src="{{ "js/leaflet/leaflet.js" | relURL }}"></script>
+<script src="{{ "js/leaflet/leaflet-providers.js" | relURL }}"></script>
+<script>
+
+  var mymap = L.map('map').setView([51.428287, -0.452663], 14);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(mymap);
+
+  var marker = L.marker([51.428287, -0.452663]).addTo(mymap);
+
+</script>

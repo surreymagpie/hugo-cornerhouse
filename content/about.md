@@ -1,10 +1,9 @@
 ---
-title: "About Us"
-date: 2018-08-22T22:21:28+01:00
+title: About Us
 menu:
   main:
     weight: 2
-    name: "About"
+    name: About
 ---
 
 We offer all the usual types of treatment that most people need to keep their mouths, teeth and gums healthy. This includes check-ups, scaling, X-rays, fillings and extractions. Further details are available on the treatment pages

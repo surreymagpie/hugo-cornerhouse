@@ -1,9 +1,10 @@
 ---
-title: "News"
+title: News
 menu:
   main:
     weight: 4
-    name: "Team"
+    name: Team
+    parent: About
 ---
 
 # Our Team

@@ -3,4 +3,5 @@
     <h1 class="article__title" >{{ .Title }}</h1>
     <div class="article__content" >{{ .Content }}</div>
   </article>
+  {{ partial "share-links.html" . }}
 {{ end }}

@@ -1,0 +1,31 @@
+{{/* Facebook */}}
+<a  href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | absURL }}"
+    target="_blank"
+    class="visually-hidden"
+    title="Share this page on Facebook">
+    Share this page on Facebook
+</a>
+    
+{{/* Twitter */}}
+<a  href="https://twitter.com/intent/tweet?url={{ .Permalink | absURL }}&text={{ .Title }}"
+    target="_blank"
+    class="visually-hidden"
+    title="Tweet this page">
+  Tweet this page
+</a>
+
+{{/* Email */}}
+<a  href="mailto:?subject={{ .Title }}&body={{ .Permalink | absURL }}"
+    target="_blank"
+    class="visually-hidden"
+    title="Email this page">
+  Email this page
+</a>
+
+{{/* Whatsapp */}}
+<a  href="whatsapp://send?text={{ .Title }}%20{{ .Permalink | absURL }}"
+    target="_blank"
+    class="visually-hidden"
+    title="Whatsapp this page">
+  Whatsapp this page
+</a>

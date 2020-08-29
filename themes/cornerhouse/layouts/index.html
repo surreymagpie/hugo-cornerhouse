@@ -1,4 +1,4 @@
 {{ define "main" }}
-    <h1>{{ .Page.Title }}</h1>
     {{ .Page.Content }}
+    {{- partial "share-links.html" . -}}
 {{ end }}
